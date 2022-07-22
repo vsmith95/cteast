@@ -7,10 +7,15 @@ import WilliHome from "./components/WilliHome";
 import WWD from "./components/WWD";
 import Insurance from "./components/Insurance";
 import Hero from "./components/Hero";
-import Nav from "./components/Nav";
+import "./assets/css/style.css";
 
 function App() {
     const [pages] = useState([
+        {
+            name: "home",
+            display:"Home",
+            component: <Home />
+        },
       {
           name: "willihome",
           display: "Willimantic",
