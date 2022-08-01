@@ -18,6 +18,10 @@
     justify-content: center;
 }
 
+.aright {
+    justify-self: right;
+}
+
 body {
     font-family: Helvetica, Arial, sans-serif;
 }
@@ -94,7 +98,8 @@ nav ul li:hover {
 
 .contentContainer {
     margin: 10px;
-    width: 25%;
+    height: 50%;
+    width: 45%;
     border: 2px solid black;
     padding: 10px;
     background-color: var(---tertiary-color);
@@ -103,6 +108,25 @@ nav ul li:hover {
 
 .contentTitle {
     font-size: 21px;
+    text-align: center;
+}
+
+.map {
+    margin: 0 auto;
+    width: 376px;
+    height: 350px;
+    align-self: center;
+}
+
+.mapContainer {
+    align-items: center;
+    margin: 10px;
+    height: 50%;
+    width: 100vw;
+    border: 2px solid black;
+    padding: 10px;
+    background-color: var(---tertiary-color);
+
 }
 
 /* Footer Section */
