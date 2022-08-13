@@ -1,0 +1,29 @@
+/* Styling for the Contact Related Components */
+
+.popupBtn-Container {
+    height: 65px;
+    width: 65px;
+    z-index: 9999;
+    bottom: 24px;
+    right: 24px;
+    position: fixed;
+}
+
+.popupBtn {
+    box-shadow: black 0px 3px 18px 0px;
+    background-color: rgb(228, 226, 224);
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: 1px solid black;
+    padding: 2px;
+}
+
+.popupBtn-Icon {
+    height: 90%;
+    width: 90%;
+    margin: 2px;
+}

@@ -8,7 +8,8 @@ import WWD from "./components/WWD";
 import Insurance from "./components/Insurance";
 import Hero from "./components/Hero";
 import "./assets/css/style.css";
-import Contact from "./components/Contact";
+import "./assets/css/contact.css"
+import ContactButton from "./components/ContactButton";
 
 function App() {
     const [pages] = useState([
@@ -52,6 +53,7 @@ function App() {
             <main>
               {currentPage.component}
             </main>
+            <ContactButton />
           <Footer />
       </body>
   );

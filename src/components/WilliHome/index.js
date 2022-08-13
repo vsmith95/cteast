@@ -9,7 +9,6 @@ const WilliHome = () => {
                 <h2>Willimantic Office</h2>
             </div>
             <div className='section flex-row'>
-                <Contact />
                 {/* Meet the Team Container */}
                 <div className='contentContainer'>
                     <div>
