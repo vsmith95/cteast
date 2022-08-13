@@ -1,16 +1,32 @@
-import React from 'react';
-
-// This is placeholder and will get refactored
-// Goal for this is to be a static button in the bottom right corner of the page;
-// clicking this button should create a pop up modal displaying the Contact component,
-// allowing users to email the office directly from the modal
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
-    return (
-        <div>
-            
-        </div>
-    );
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_oi4tn4h', 'template_yt4hemt', form.current, '0t016AYtzBNSpBIn_')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      e.target.reset()
+  };
+
+  return (
+    <form ref={form} onSubmit={sendEmail}>
+      <label>Name</label>
+      <input type="text" name="user_name" />
+      <label>Email</label>
+      <input type="email" name="user_email" />
+      <label>Message</label>
+      <textarea name="message" />
+      <input type="submit" value="Send" />
+    </form>
+  );
 };
 
 export default Contact;
