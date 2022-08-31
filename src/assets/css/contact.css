@@ -12,6 +12,9 @@
 .popupBtn {
     box-shadow: black 0px 3px 18px 0px;
     background-color: rgb(228, 226, 224);
+    background-image: url("../images/ContactIcon.png");
+    background-size: 90%;
+    background-position: center;
     border-radius: 50%;
     height: 100%;
     width: 100%;

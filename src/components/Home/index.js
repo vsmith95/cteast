@@ -47,6 +47,7 @@ const Home = () => {
                             </div>
                         </div>
                 </div>
+
                 {/* About Us Section */}
                 <div className='contentContainer'>
                     <div className='contentTitle'>

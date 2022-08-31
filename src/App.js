@@ -10,6 +10,7 @@ import Hero from "./components/Hero";
 import "./assets/css/style.css";
 import "./assets/css/contact.css"
 import ContactButton from "./components/ContactButton";
+import Contact from "./components/Contact";
 
 function App() {
     const [pages] = useState([
@@ -41,6 +42,7 @@ function App() {
   ])
 
   const [currentPage, setCurrentPage] = useState(pages[0]);
+  const [openContact, setOpenContact] = useState(false);
 
   return (
       <body className="App">
@@ -54,6 +56,7 @@ function App() {
               {currentPage.component}
             </main>
             <ContactButton />
+            {openContact && <Contact />}
           <Footer />
       </body>
   );

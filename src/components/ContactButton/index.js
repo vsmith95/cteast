@@ -1,13 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ContactIcon from "../../assets/images/ContactIcon.png"
 
 
 const ContactButton = (props) => {
+
+    const [openContact, setOpenContact] = useState(false);
+
   return (
     <div className='popupBtn-Container'>
-        <div className='popupBtn'>
-                <img className='popupBtn-Icon' src={ContactIcon} alt='' />
-        </div>
+        <button className='popupBtn' onClick={() => { setOpenContact(true)}}>
+                {/* <img className='popupBtn-Icon' src={ContactIcon} alt='' /> */}
+        </button>
+        {openContact && <Contact />}
     </div>    
   )
 }
