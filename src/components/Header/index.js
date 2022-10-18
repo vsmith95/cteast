@@ -1,6 +1,5 @@
 import React from 'react';
 import Logo from '../../assets/images/logo.jpg'
-import Home from '../Home';
 import Nav from '../Nav';
 
 const Header = (props) => {

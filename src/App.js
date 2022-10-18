@@ -39,10 +39,14 @@ function App() {
           display: "Insurance",
           component: <Insurance />
       },
+      {
+        name: "contact",
+        display: "Contact Us!",
+        component: <Contact />
+      },
   ])
 
   const [currentPage, setCurrentPage] = useState(pages[0]);
-  const [openContact, setOpenContact] = useState(false);
 
   return (
       <body className="App">
@@ -55,8 +59,6 @@ function App() {
             <main>
               {currentPage.component}
             </main>
-            <ContactButton />
-            {openContact && <Contact />}
           <Footer />
       </body>
   );

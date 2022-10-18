@@ -18,27 +18,29 @@ const Contact = ({openContact}) => {
   };
 
   return (
-    <div className='contactModal'>
-      <div className='contactContainer'>
-        <div className='contactTitle'>
-          <h3>
-            Connecticut East Dental Center
-          </h3>
+    <div>
+      <div className='sectionTitle vw'>
+        <h2>Contact</h2>
+      </div>
+      <div className='section flex-row'>
+        <div className='content container'>
+          <div className='contentTitle'>
+            <h3>
+              Connecticut East Dental Center
+            </h3>
+          </div>
+          <div>
+            <p>
+              This is a generic text block that will be filled out at a later time, if not it will be removed.
+            </p>
+          </div>
+          <form className='contactForm' ref={form} onSubmit={sendEmail}>
+            <input className='formInput' type="text" name="user_name" placeholder='Name' />
+            <input className='formInput' type="email" name="user_email" placeholder='Email' />
+            <textarea name="message" />
+            <input className='formBtn' type="submit" value="Send"/>
+          </form>
         </div>
-        <div>
-          <p>
-            Hi! Let us know how we can help and we’ll respond shortly.
-          </p>
-        </div>
-        <form ref={form} onSubmit={sendEmail}>
-          <label>Name</label>
-          <input type="text" name="user_name" />
-          <label>Email</label>
-          <input type="email" name="user_email" />
-          <label>Message</label>
-          <textarea name="message" />
-          <input type="submit" value="Send" />
-        </form>
       </div>
     </div>
   );
